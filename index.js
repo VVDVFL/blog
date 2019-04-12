@@ -14,6 +14,8 @@ app.use(require('morgan')('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 require('./models/User');
+require('./models/Artical');
+require('./models/Comment');
 require('./config/passport');
 app.use(require('./routes'));
 
@@ -33,13 +35,13 @@ app.use(express.static(__dirname + '/public'));
   }
 
 //This will help in handling stacktrace to json error
-  app.use(function(err, req, res, next) {
+  /*app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.json({'errors': {
       message: err.message,
       error: {}
     }});
-  });
+  });*/
  //Now creating sample start service
  app.get('/start', (req, res) => {
     res.send('started')

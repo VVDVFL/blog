@@ -1,11 +1,16 @@
 Node.js sample project(2) to get hands on experience 
 
 Planned tasks: BLOG
-    1. User Management -- Completed
-        Get User details based on payload || Authenticated
-        Create user if not exist || Authenticated
-        User login || Not authenticated
-    2. Artical Management -- Pending
+    1. User Management 
+        Get User details based on payload || Authorized
+        Create user if not exist || Authorized
+        User login || Not Authorized
+    2. Article Management
+        Post Article || Authorized
+        View Article || Authorized OR Not Authorized
+        Add article to favorite || Authorized
+        Add comment to artical || Authorized
+    3. JWT Autorization    
 
 Dependencies Used(@highlevel) : For more info have a look at package.json
 1. Passport.js
